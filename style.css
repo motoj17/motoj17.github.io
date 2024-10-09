@@ -1,8 +1,10 @@
 .Main {
-    font-family: Impact;
+    font-family: "Segoe Fluent Icons";
+    scale: 200%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: White;
 }
 
 .Calculator {
@@ -10,9 +12,46 @@
     justify-content: center;
     align-items: center;
 }
-
 .Space {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.Bird {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Snake {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+html {
+    background: url(img/pixels.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
