@@ -23,7 +23,7 @@
     align-items: center;
 }
 .Snake {
-    display: flex;
+    display:  flex;
     justify-content: center;
     align-items: center;
 }
@@ -48,7 +48,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-body {
+html {
     background: url(img/pixels.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
