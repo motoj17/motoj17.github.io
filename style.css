@@ -27,7 +27,11 @@
     justify-content: center;
     align-items: center;
 }
-
+.minecraft {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
 a:link {
     color: white;
 }
