@@ -3,6 +3,7 @@ body {
 }
 main {
     margin: 20px;
+    color: blue;
 }
 
 .navbar ul{
@@ -34,9 +35,14 @@ main {
 }
 
 /* html {
-    background: url(/img/pixels.jpg) no-repeat center center fixed;
+    background: url(/img/bg-sunset.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+*/
+.space5 {
+    padding-bottom: 50px;
 }
