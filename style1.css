@@ -10,7 +10,11 @@ main {
     background-color: #424242;
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid #575757;
 }
 
 .navbar a{
