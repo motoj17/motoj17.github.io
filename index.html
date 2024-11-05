@@ -11,7 +11,7 @@
 <body>
 
 
-<nav class="navbar">
+<!-- <nav class="navbar">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="nothing_here.html">About</a></li>
@@ -19,6 +19,18 @@
         <li><a href="/old/index_old.html">Old website</a></li>
         <li><a href="#">Something</a></li>
     </ul>
+</nav> -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="#" class="navbar-brand">Brand</a>
+        <div class="navbar-links" id="navbarLinks">
+            <a href="index.html">Home</a>
+            <a href="nothing_here.html">About</a>
+            <a href="nothing_here.html">Contact</a>
+            <a href="/old/index_old.html">Old Website</a>
+        </div>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
 </nav>
 
 
@@ -48,7 +60,7 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores est modi porro provident quaerat quia totam.
     Alias animi dicta dolorum, fugit in iste nemo quidem, quod similique tenetur unde voluptates.
     <div class="space5"></div>
-    <pre>
+    <a style="font-size: 8px"><pre>
               @@@@@@@@@@@@
            @@@%%%%%%%%%%%%%@@@
          -@@%%%%%%%%%%%%%%%%%@@.
@@ -74,7 +86,7 @@
        .@@@@@@@@@@@@. .@@@@@@@@@@
         @@@@@@@@@@@@    @@@@@@@@
          @@@@@@@@@.
-    </pre>
+    </pre></a>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, perspiciatis, similique. Consequuntur
     distinctio excepturi facilis laboriosam omnis quidem ratione! Accusamus alias aliquam esse hic ipsum, obcaecati quis
     sint sit tenetur.
@@ -91,7 +103,7 @@
     
 
     <div class="space5"></div>
-    <pre>
+    <a style="font-size: 8px"><pre>
                   @@@@@@@@
          @@@@@@@@@@@@@@@@@@@@@@
    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -118,7 +130,7 @@
    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
        @@@@@@@@@@@@@@@@@@@@@@@@
                @@@@@@@@@@@@
-        </pre>
+        </pre></a>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur at consectetur corporis dicta ea
     enim expedita ipsum itaque, laudantium maxime nulla quam quis quisquam rem repellat velit. Incidunt, numquam!
     <div class="space5"></div>
@@ -152,4 +164,5 @@
         suscipit veniam.</p>
 </main>
 </body>
+<script src="script.js"></script>
 </html>

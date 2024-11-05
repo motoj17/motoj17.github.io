@@ -3,9 +3,9 @@ body {
 }
 main {
     margin: 20px;
-    color: blue;
+    color: black;
 }
-
+/*
 .navbar ul{
     list-style-type: none;
     background-color: #424242;
@@ -33,6 +33,7 @@ main {
 .navbar li{
     float: left;
 }
+*/
 
 /* html {
     background: url(/img/bg-sunset.png) no-repeat center center fixed;
@@ -45,4 +46,99 @@ main {
 */
 .space5 {
     padding-bottom: 50px;
+}
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333; /* Opaque background for navbar */
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10; /* Ensure it stays above the dropdown */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Flex container for left-aligned links and brand */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    max-height: 0; /* Initially hidden */
+    opacity: 0; /* Initially hidden */
+    overflow: hidden; /* Ensures smooth slide */
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+/* Mobile styles */
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    /* Hide links by default on mobile */
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%; /* Position right under the navbar */
+        left: 0;
+        background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background for dropdown */
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional, subtle border */
+        max-height: 0; /* Start hidden */
+        opacity: 0; /* Start hidden */
+        pointer-events: none; /* Prevent clicks when hidden */
+        backdrop-filter: blur(10px); /* Apply blur effect only on dropdown */
+    }
+
+    .navbar-links.active {
+        max-height: 300px; /* Adjust based on content */
+        opacity: 1; /* Fade in */
+        pointer-events: auto; /* Enable clicks */
+    }
+
+    .navbar-links a {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Show Menu button on mobile */
+    .menu-toggle {
+        display: inline-block;
+    }
 }
