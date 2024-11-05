@@ -120,7 +120,7 @@ body {
         max-height: 0; /* Start hidden */
         opacity: 0; /* Start hidden */
         pointer-events: none; /* Prevent clicks when hidden */
-        backdrop-filter: blur(50px); /* Apply blur effect only on dropdown */
+        backdrop-filter: blur(2px); /* Apply blur effect only on dropdown */
     }
 
     .navbar-links.active {
