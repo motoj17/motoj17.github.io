@@ -47,6 +47,12 @@ main {
 .space5 {
     padding-bottom: 50px;
 }
+.unselectable {
+    user-select: none; /* Disables text selection */
+    -webkit-user-select: none; /* For Safari and older versions of Chrome */
+    -ms-user-select: none; /* For older versions of Internet Explorer */
+}
+
 /* Global styles */
 * {
     margin: 0;
@@ -72,7 +78,7 @@ body {
 
 .navbar-brand {
     font-size: 24px;
-    color: #fff;
+    color: lime;
     text-decoration: none;
 }
 
