@@ -48,12 +48,12 @@ main {
     padding-bottom: 50px;
 }
 .unselectable {
-    user-select: none; /* Disables text selection */
-    -webkit-user-select: none; /* For Safari and older versions of Chrome */
-    -ms-user-select: none; /* For older versions of Internet Explorer */
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
-/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -69,11 +69,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333; /* Opaque background for navbar */
+    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     position: relative;
-    z-index: 10; /* Ensure it stays above the dropdown */
+    z-index: 10;
 }
 
 .navbar-brand {
@@ -82,7 +82,6 @@ body {
     text-decoration: none;
 }
 
-/* Flex container for left-aligned links and brand */
 .navbar-left {
     display: flex;
     align-items: center;
@@ -92,8 +91,8 @@ body {
 .navbar-links {
     display: flex;
     gap: 15px;
-    transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
-    overflow: hidden; /* Ensures smooth slide */
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
 }
 
 .navbar-links a {
@@ -102,7 +101,7 @@ body {
     padding: 8px 12px;
 }
 
-/* Mobile styles */
+
 .menu-toggle {
     display: none;
     background-color: #333;
@@ -113,27 +112,27 @@ body {
 }
 
 @media (max-width: 510px) {
-    /* Hide links by default on mobile */
+
     .navbar-links {
         display: flex;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 100%; /* Position right under the navbar */
+        top: 100%;
         left: 0;
-        background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent background for dropdown */
+        background-color: rgba(51, 51, 51, 0.7);
         padding: 10px 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.2); /* Optional, subtle border */
-        max-height: 0; /* Start hidden */
-        opacity: 0; /* Start hidden */
-        pointer-events: none; /* Prevent clicks when hidden */
-        backdrop-filter: blur(2px); /* Apply blur effect only on dropdown */
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        max-height: 0;
+        opacity: 0;
+        pointer-events: none;
+        backdrop-filter: blur(2px);
     }
 
     .navbar-links.active {
-        max-height: 300px; /* Adjust based on content */
-        opacity: 1; /* Fade in */
-        pointer-events: auto; /* Enable clicks */
+        max-height: 300px;
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .navbar-links a {
@@ -142,7 +141,7 @@ body {
         width: 100%;
     }
 
-    /* Show Menu button on mobile */
+
     .menu-toggle {
         display: inline-block;
     }
