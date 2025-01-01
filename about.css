@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+}
+main {
+    margin: 20px;
+    color: black;
+}
+/*
+.navbar ul{
+    list-style-type: none;
+    background-color: #424242;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid #575757;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #3c3c3c;
+}
+
+.navbar li{
+    float: left;
+}
+*/
+
+/* html {
+    background: url(/img/bg-sunset.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+*/
+.space5 {
+    padding-bottom: 50px;
+}
+.unselectable {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: lime;
+    text-decoration: none;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 510px) {
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(51, 51, 51, 0.7);
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        max-height: 0;
+        opacity: 0;
+        pointer-events: none;
+        backdrop-filter: blur(2px);
+    }
+
+    .navbar-links.active {
+        max-height: 300px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navbar-links a {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .menu-toggle {
+        display: inline-block;
+    }
+}

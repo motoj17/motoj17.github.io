@@ -17,3 +17,10 @@ document.addEventListener('click', function(event) {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.querySelector("nav");
+    const navbarHeight = navbar.offsetHeight;
+    document.body.style.paddingTop = `${navbarHeight}px`;
+});
+
